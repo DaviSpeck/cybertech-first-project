@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav id="menu">
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<section id="sec_produtos">
+		<div class="containers_a_b" id="container-a">
+			<h2 id="h2_produtos">Filtrar por marcas</h2>
+
+			<ul>
+				<li onclick="filtrar('AMD')"><a class="a-menu1" href="#">AMD</a></li>
+				<li onclick="filtrar('Dell')"><a class="a-menu1" href="#">Dell</a></li>
+				<li onclick="filtrar('Intel')"><a class="a-menu1" href="#">Intel</a></li>
+			</ul>
+
+			<h2 onclick="filtrar('')"><a d="h2_limpar_filtros"class="a-menu2" href="#">Limpar Filtro</a></h2>
+
+			<h2 id="h2_produtos_retornar">Produtos</h2>
+
+			<ul>
+				<li><a class="a-menu1" href="hardware.html">Hardware</a></li>
+				<li><a class="a-menu1"href="monitores.html">Monitores</a></li>
+				<li><a class="a-menu1" href="notebooks.html">Notebooks</a></li>
+				<li><a class="a-menu1" href="componentes.html">Componentes</a></li>
+			</ul>
+		</div>
+		<div class="containers_a_b" id="container-b">
+			<h1 id="h2_produtos_all">Desktops</h2>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">CPU Intel i3 4Gb | R$1.213,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('CPU Intel i3 4Gb', 1213.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 2.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">PC Intel Core i3, 8GB RAM DDR3 | R$1.670,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('PC Intel Core i3, 8GB RAM DDR3', 1670.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 3.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Dell Vostro VST-3470-U15 | R$2.799,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Dell Vostro VST-3470-U15', 2799.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 4.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">PC Gamer AMD Ryzen 5 | R$ 3.907,99 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('PC Gamer AMD Ryzen 5', 3907.99); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 5.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">CPU Intel Core i5 8Gb | R$2.014,20 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('CPU Intel Core i5 8Gb', 2014.20); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 6.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">CPU Intel Core i3 8Gb | R$2.223,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('CPU Intel Core i3 8Gb', 2223.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 7.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">CPU Intel Core i7 8GB | R$2.778,65 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('CPU Intel Core i7 8GB', 2778.65); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 8.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">PC Intel Completo i5 8Gb | R$2.374,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('PC Intel Completo i5 8Gb', 2374.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/desk 9.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Intel 8Gb | R$1.859,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Intel 8Gb', 1859.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+				</div>
+		</div>
+	</section>
+	<!--Modal do Carrinho de compras-->
+	<div class="modal-carrinho-overlay" id="modal-carrinho-overlay">
+		<div class="modal-carrinho-container" id="modal-carrinho-container">
+			<button class="botao-fechar-carrinho" onclick="fechar_carrinho()"><i class="fas fa-times"></i></button>
+			<h3>Carrinho de compras</h3>
+			<p id="conteudo-carrinho"></p>
+		</div>
+	</div>
+	<!-- Botão flutuante do carrinho-->
+	<a href="#" class="botao-carrinho" onclick="abrir_carrinho()">
+		<i class="fa fa-shopping-cart"></i>
+		<br>
+		<div id="qtdItensCarrinho"></div>
+	</a>
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="#">@SGD</a> - 2020
+		</p>
+	</footer>
+
+</body>
+
+</html>

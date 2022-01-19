@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav id="menu">
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<section id="sec_produtos">
+		<div class="containers_a_b" id="container-a">
+			<h2 id="h2_produtos">Filtrar por marcas</h2>
+
+			<ul>
+				<li onclick="filtrar('Acer')"><a class="a-menu1" href="#">Acer</a></li>
+				<li onclick="filtrar('AOC')"><a class="a-menu1" href="#">AOC</a></li>
+				<li onclick="filtrar('Dell')"><a class="a-menu1" href="#">Dell</a></li>
+				<li onclick="filtrar('LG')"><a class="a-menu1" href="#">LG</a></li>
+				<li onclick="filtrar('Samsung')"><a class="a-menu1" href="#">Samsung</a></li>
+			</ul>
+
+			<h2 onclick="filtrar('')"><a d="h2_limpar_filtros"class="a-menu2" href="#">Limpar Filtro</a></h2>
+
+			<h2 id="h2_produtos_retornar">Produtos</h2>
+
+			<ul>
+				<li><a class="a-menu1" href="hardware.html">Hardware</a></li>
+				<li><a class="a-menu1"href="componentes.html">Componentes</a></li>
+				<li><a class="a-menu1" href="notebooks.html">Notebooks</a></li>
+				<li><a class="a-menu1" href="desktops.html">Desktops</a></li>
+			</ul>
+		</div>
+		<div class="containers_a_b" id="container-b">
+			<h1 id="h2_produtos_all">Monitores</h2>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">LG 20MK400H-B.AWZ | R$512,91 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('LG 20MK400H-B.AWZ', 512.91); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 2.png" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Acer V206HQL | R$597,52 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Acer V206HQL', 597.52); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 3.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">LG 25UM58G-P.AWZ | R$901,55 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('LG 25UM58G-P.AWZ', 901.55); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 4.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">LG 24MK430H | R$807,41 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('LG 24MK430H', 807.41); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 5.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">AOC B1 22B1H | R$617,41 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('AOC B1 22B1H', 617.41); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 6.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Dell Widescreen | R$600,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Dell Widescreen', 600.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 7.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">LG UltraWide | R$1.394,10 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('LG UltraWide', 1394.10); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 8.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Acer V276HL_C | R$1.025,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Acer V276HL_C', 1025.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/monitor 9.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Samsung S24D332H |R$759,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Samsung S24D332H', 759.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!--Modal do Carrinho de compras-->
+	<div class="modal-carrinho-overlay" id="modal-carrinho-overlay">
+		<div class="modal-carrinho-container" id="modal-carrinho-container">
+			<button class="botao-fechar-carrinho" onclick="fechar_carrinho()"><i class="fas fa-times"></i></button>
+			<h3>Carrinho de compras</h3>
+			<p id="conteudo-carrinho"></p>
+		</div>
+	</div>
+	<!-- Botão flutuante do carrinho-->
+	<a href="#" class="botao-carrinho" onclick="abrir_carrinho()">
+		<i class="fa fa-shopping-cart"></i>
+		<br>
+		<div id="qtdItensCarrinho"></div>
+	</a>
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="#">@SGD</p>a> - 2020
+		</a>p>
+	</footer>
+
+</body>
+
+</html>

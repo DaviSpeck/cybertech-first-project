@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav>
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<article id="article_agendamentos">
+		<h1 id="h1_agendamentos">Tech house
+			<h1 />
+	</article>
+
+	<section id="sobre_agendamentos">
+		<!--Section de parágrafos separada do article porque no article estava sendo triplicado a tag "br/"-->
+		<p class="p_agendamentos">A <strong><span class="txt_preto">Tech House</span></strong> é um ambiente inspirado
+			nas mais recentes e sofisticadas lan houses do século XXI. Com os monitores “Acer Nitro XZ242Q” é prometida
+			uma imersão dos sonhos para aqueles vidrados, inclusive nos mínimos detalhes. Sinta-se jogando e veja na
+			frente de seus olhos a verdade do ditado: “A vida é um jogo!”.</p>
+		<br />
+		<p class="p_agendamentos">Os melhores jogadores possuem um talento inato com o qual não precisam de muito para
+			se destacar. Porém, na Tech House, você ainda terá equipamentos que te forneçam uma estrutura que permita um
+			rendimento ainda maior. Aqui, com um preço extremamente baixo diante da imensidão em qualidade do que é
+			oferecido, você pode se tornar o melhor naquilo que gosta e ama fazer! Jogue com tudo o que um profissional
+			joga, experimente esta realidade agora. <strong><span class="txt_preto">Seja você o seu
+					profissional.</span></strong></p>
+	</section>
+
+	<section id="pag_techhouse">
+
+		<div id="container">
+			<div class="card">
+				<img src="img/lazer.jpg" alt="Imagem seção lazer na loja CyberTech" />
+				<div class="card_content">
+					<h3>Lazer</h3>
+					<p>Divirta-se na Tech House durante o horário normal de funcionamento, anime-se com os jogos e afins
+						oferecidos nas máquinas de última geração nas arenas.</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="img/corujão.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+				<div class="card_content">
+					<h3>Corujão</h3>
+					<p>A madrugada é o horário de quem quer uma melhor experiência nas arenas, venha para um corujão e
+						vire o dia mostrando quem você é no competitivo ou apenas rindo com os amigos na casual.</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="img/campeonato.jpg" alt="Imagem seção campeonato na loja CyberTech" />
+				<div class="card_content">
+					<h3>Campeonatos</h3>
+					<p>Campeonatos da própria loja são ofertados mensalmente (ACOMPANHE!), além disso, as arenas estão
+						disponibilizadas com agendamento prévio de times que procuram estabilidade em conexão e
+						qualidade em momentos de campeonato.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="pag_agendamentos">
+		<h1>Agendamentos</h1>
+
+		<p>Agende o seu horário na Tech House:</p>
+
+		<form name="" method="" onsubmit="cadastrar_agendamento()">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome_completo" id="nome" placeholder="Nome Completo" required />
+
+			<label for="email">E-mail:</label>
+			<input type="text" name="email" id="email" placeholder="nome@email.com" required />
+
+			<label for="senha">Senha:</label>
+			<input type="password" name="senha" id="senha" placeholder="somente numeros" required />
+
+			<label for="celular">Celular:</label>
+			<input type="tel" name="celular" id="celular" placeholder="(99)99999-9999" required
+				pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+			<div id="data-hora-tempo">
+				<div>
+					<label for="data">Data:</label>
+					<input type="date" name="data" id="data" required />
+				</div>
+				<div>
+					<label for="hora">Hora:</label>
+					<input type="time" name="hora" id="hora" required />
+				</div>
+				<div>
+					<label for="tempo">Tempo de uso:</label>
+					<input type="number" name="tempo" id="tempo" placeholder="Horas" min="1" max="8" step="1"
+						required />
+				</div>
+			</div>
+
+			<label for="objetivo">Objetivo:</label>
+			<select id="objetivo" name="objetivo">
+				<option>Lazer</option>
+				<option>Mix</option>
+				<option>Corujão</option>
+				<option>Campeonato</option>
+			</select>
+
+			<label for="obs">Observação:</label>
+			<textarea id="obs" cols="54" rows="4">
+				</textarea>
+
+			<div id="botoes_form">
+				<input type="submit" name="btn_agendar" value="AGENDAR" />
+				<input type="reset" name="btn_cancelar" value="CANCELAR" />
+			</div>
+			<form />
+	</section>
+
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="https://www.flow.page/cybertech">@SGD</a> - 2020
+		</p>
+	</footer>
+</body>
+
+</html>

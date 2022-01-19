@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav id="menu">
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<section id="sec_produtos">
+		<div class="containers_a_b" id="container-a">
+			<h2 id="h2_produtos">Filtrar por marcas</h2>
+
+			<ul>
+				<li onclick="filtrar('Logitech')"><a class="a-menu1" href="#">Logitech</a></li>
+				<li onclick="filtrar('Multilaser')"><a class="a-menu1"href="#">Multilaser</a></li>
+				<li onclick="filtrar('HyperX')"><a class="a-menu1" href="#">HyperX</a></li>
+				<li onclick="filtrar('Razer')"><a class="a-menu1" href="#">Razer</a></li>
+				<li onclick="filtrar('Corsair')"><a class="a-menu1" href="#">Corsair</a></li>
+				<li onclick="filtrar('Havit')"><a class="a-menu1"href="#">Havit</a></li>
+				<li onclick="filtrar('Coolermaster')"><a class="a-menu1" href="#">Coolermaster</a></li>
+				<li onclick="filtrar('RedDragon')"><a class="a-menu1" href="#">RedDragon</a></li>
+				<li onclick="filtrar('Fallen')"><a class="a-menu1" href="#">Fallen</a></li>
+			</ul>
+
+			<h2 onclick="filtrar('')"><a d="h2_limpar_filtros"class="a-menu2" href="#">Limpar Filtro</a></h2>
+
+			<h2 id="h2_produtos_retornar">Produtos</h2>
+
+			<ul>
+				<li><a class="a-menu1" href="hardware.html">Hardware</a></li>
+				<li><a class="a-menu1"href="monitores.html">Monitores</a></li>
+				<li><a class="a-menu1" href="notebooks.html">Notebooks</a></li>
+				<li><a class="a-menu1" href="desktops.html">Desktops</a></li>
+			</ul>
+		</div>
+		<div class="containers_a_b" id="container-b">
+			<h1 id="h2_produtos_all">Componentes</h2>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/head 6.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Razer Kraken | R$719,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Razer Kraken', 719.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/head 5.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Logitech Warrior Vermelho | R$169,91 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Logitech Warrior Vermelho', 169.91); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/head 3.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards"> Multilaser Cloud Stinger | R$755,71 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Multilaser Cloud Stinger', 755.71); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/mouse 2.png" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">HyperX Scimitar Elite | R$682,24 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('HyperX Scimitar Elite', 682,24); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/mouse 3.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Corsair MX Anywhere 2S | R$335,18 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Corsair MX Anywhere  2S', 335.18); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/mouse 1.png"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Havit Chroma Cobra M711 | R$159,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Havit Chroma Cobra M711', 159.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/teclado 1.jpeg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Coolermaster MS111 | R$165,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Coolermaster MS111', 165.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/pad 4.png" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">RedDragon HV-MP830 | R$73,40 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('RedDragon HV-MP830', 73.40); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/teclado 2.jpeg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Fallen AMD Falcão-peregrino V3 | R$549,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Fallen AMD Falcão-peregrino V3', 549.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<!--Modal do Carrinho de compras-->
+	<div class="modal-carrinho-overlay" id="modal-carrinho-overlay">
+		<div class="modal-carrinho-container" id="modal-carrinho-container">
+			<button class="botao-fechar-carrinho" onclick="fechar_carrinho()"><i class="fas fa-times"></i></button>
+			<h3>Carrinho de compras</h3>
+			<p id="conteudo-carrinho"></p>
+		</div>
+	</div>
+	<!-- Botão flutuante do carrinho-->
+	<a href="#" class="botao-carrinho" onclick="abrir_carrinho()">
+		<i class="fa fa-shopping-cart"></i>
+		<br>
+		<div id="qtdItensCarrinho"></div>
+	</a>
+
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="#">@SGD</a> - 2020
+		</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav id="menu">
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<section id="sec_produtos">
+		<div class="containers_a_b" id="container-a">
+			<h2 id="h2_produtos">Filtrar por marcas</h2>
+
+			<ul>
+				<li onclick="filtrar('WD')"><a class="a-menu1" href="#">WD</a></li>
+				<li onclick="filtrar('Pichau')"><a class="a-menu1" href="#">Pichau</a></li>
+				<li onclick="filtrar('Seagate')"><a class="a-menu1" href="#">Seagate</a></li>
+				<li onclick="filtrar('NVIDIA')"><a class="a-menu1" href="#">NVIDIA</a></li>
+				<li onclick="filtrar('AMD')"><a class="a-menu1" href="#">AMD</a></li>
+				<li onclick="filtrar('Intel')"><a class="a-menu1" href="#">Intel</a></li>
+			</ul>
+
+			<h2 onclick="filtrar('')"><a d="h2_limpar_filtros"class="a-menu2" href="#">Limpar Filtro</a></h2>
+
+			<h2 id="h2_produtos_retornar">Produtos</h2>
+
+			<ul>
+				<li><a class="a-menu1" href="componentes.html">Componentes</a></li>
+				<li><a class="a-menu1"href="monitores.html">Monitores</a></li>
+				<li><a class="a-menu1" href="notebooks.html">Notebooks</a></li>
+				<li><a class="a-menu1" href="desktops.html">Desktops</a></li>
+			</ul>
+		</div>
+		<div class="containers_a_b" id="container-b">
+			<h1 id="h2_produtos_all">Hardware</h2>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/hd 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">WD Western Digital | R$360,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('WD Western Digital', 360.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/ssd 1.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Pichau gamer ssd | R$389,01 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Pichau gamer ssd', 389.01); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/hd 3.jpg" alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Seagate BarraCuda | R$450,47 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Seagate BarraCuda', 450.47); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/memoria 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">NVIDIA T-Force Vulcan | R$239,01 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('NVIDIA T-Force Vulcan', 239.01); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/placa 3.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">AMD GeForce GTX 1650 | R$1099,97 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('AMD GeForce GTX 1650', 1099.97); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/memoria 2.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">WD Vengeance LPX | R$699,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('WD Vengeance LPX', 699.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/placa 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">WD Radeon RX 580 OC | R$1399,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('WD Radeon RX 580 OC', 1399.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/processador 3.jpg"
+							alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Intel Core i7-9700K | R$2.845,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Intel Core i7-9700K', 2845.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/placa 2.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">AMD GeForce GTX 1650 EX Plus | R$1699,90 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('AMD GeForce GTX 1650 EX Plus', 1699.90); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!--Modal do Carrinho de compras-->
+	<div class="modal-carrinho-overlay" id="modal-carrinho-overlay">
+		<div class="modal-carrinho-container" id="modal-carrinho-container">
+			<button class="botao-fechar-carrinho" onclick="fechar_carrinho()"><i class="fas fa-times"></i></button>
+			<h3>Carrinho de compras</h3>
+			<p id="conteudo-carrinho"></p>
+		</div>
+	</div>
+	<!-- Botão flutuante do carrinho-->
+	<a href="#" class="botao-carrinho" onclick="abrir_carrinho()">
+		<i class="fa fa-shopping-cart"></i>
+		<br>
+		<div id="qtdItensCarrinho"></div>
+	</a>
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="#">@SGD</a> - 2020
+		</p>
+	</footer>
+
+</body>
+
+</html>

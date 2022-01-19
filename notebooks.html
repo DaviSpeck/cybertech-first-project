@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>CyberTech</title>
+
+	<meta chaset="utf-8">
+	<meta name="author" content="SGD" />
+	<meta name="keywords"
+		content="Tecnologia, Lan house, Computadores, Notebooks, Fones de ouvido, Headset, Mouse, Monitor, Gabinete gamer" />
+	<meta name="description"
+		content="Loja especializada em venda, manutenção e distribuição de equipamentos gamers e tecnológicos" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="site.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="img/CyberTECH.banner.jpg" alt="Banner contendo a logo da CyberTech acompanhado de uma paisagem" />
+	</header>
+
+	<nav id="menu">
+		<a class="a-menu" href="index.html"> HOME </a>
+		<a class="a-menu" href="index.html#pag_produtos"> PRODUTOS </a>
+		<a class="a-menu" href="agendamento.html"> TECH HOUSE </a>
+	</nav>
+
+	<section id="sec_produtos">
+		<div class="containers_a_b" id="container-a">
+			<h2 id="h2_produtos">Filtrar por marcas</h2>
+
+			<ul>
+				<li onclick="filtrar('ZenBook')"><a class="a-menu1" href="#">ZenBook</a></li>
+				<li onclick="filtrar('Asus')"><a class="a-menu1" href="#">Asus</a></li>
+				<li onclick="filtrar('Vaio')"><a class="a-menu1" href="#">Vaio</a></li>
+				<li onclick="filtrar('Lenovo')"><a class="a-menu1" href="#">Lenovo</a></li>
+				<li onclick="filtrar('Xiaomi')"><a class="a-menu1" href="#">Xiaomi</a></li>
+				<li onclick="filtrar('Compaq')"><a class="a-menu1" href="#">Compaq</a></li>
+				<li onclick="filtrar('Positivo')"><a class="a-menu1" href="#">Positivo</a></li>
+			</ul>
+
+			<h2 onclick="filtrar('')"><a d="h2_limpar_filtros"class="a-menu2" href="#">Limpar Filtro</a></h2>
+
+			<h2 id="h2_produtos_retornar">Produtos</h2>
+
+			<ul>
+				<li><a class="a-menu1" href="hardware.html">Hardware</a></li>
+				<li><a class="a-menu1"href="monitores.html">Monitores</a></li>
+				<li><a class="a-menu1" href="componentes.html">Componentes</a></li>
+				<li><a class="a-menu1" href="desktops.html">Desktops</a></li>
+			</ul>
+		</div>
+		<div class="containers_a_b" id="container-b">
+			<h1 id="h2_produtos_all">Notebooks</h2>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 1.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">ZenBook 14 UX434FAC-A6340T | R$5.889,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('ZenBook 14 UX434FAC-A6340T', 5889.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 2.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">ZenBook 14 UX431FA-AN202T | R$4.939,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('ZenBook 14 UX431FA-AN202T', 4939.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 3.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Vaio FE15 | R$2.999,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Vaio FE15', 2999.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 4.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Lenovo Legion Y540 | R$7.599,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Lenovo Legion Y540', 7599.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 5.jpg" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Asus RedmiBook Laptop 14.0 | R$3.508,23 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Asus RedmiBook Laptop 14.0', 3508.23); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 6.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Compaq Presario CQ-32 | R$2.882,07 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Compaq Presario CQ-32', 2882.07); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 7.jpg" alt="Imagem seção lazer na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Lenovo ConceptD 3 CN315-71P-5527 | R$9.767,12 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Lenovo ConceptD 3 CN315-71P-5527', 9767.12); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 8.png" alt="Imagem da TechHouse na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Positivo Dual Core | R$ 1.899,00 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Positivo Dual Core', 1899.00); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+
+					<div class="card_produtos">
+						<img class="img_produtos" src="img/note 9.jpg"
+							alt="Imagem seção campeonato na loja CyberTech" />
+						<div class="card_content">
+							<h3 class="cards">Xiaomi Ideapad S145 81XM0002BR | R$2.849,05 |
+								<i class="fa fa-cart-plus clicavel" aria-hidden="true"
+									onclick="adicionar_produto('Xiaomi Ideapad S145 81XM0002BR', 2849.05); abrir_carrinho();"
+									title="Adicionar ao carrinho"></i>
+							</h3>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!--Modal do Carrinho de compras-->
+	<div class="modal-carrinho-overlay" id="modal-carrinho-overlay">
+		<div class="modal-carrinho-container" id="modal-carrinho-container">
+			<button class="botao-fechar-carrinho" onclick="fechar_carrinho()"><i class="fas fa-times"></i></button>
+			<h3>Carrinho de compras</h3>
+			<p id="conteudo-carrinho"></p>
+		</div>
+	</div>
+	<!-- Botão flutuante do carrinho-->
+	<a href="#" class="botao-carrinho" onclick="abrir_carrinho()">
+		<i class="fa fa-shopping-cart"></i>
+		<br>
+		<div id="qtdItensCarrinho"></div>
+	</a>
+	<footer>
+		<p>
+			Desenvolvido por <a id="link_empresa" href="#">@SGD</a> - 2020
+		</p>
+	</footer>
+
+</body>
+
+</html>

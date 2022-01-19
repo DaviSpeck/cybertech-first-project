@@ -1,0 +1,436 @@
+/*Home Page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
+
+*{margin:0; padding: 0;}
+
+body{
+background-color: rgb(255,255,255)
+}
+
+header, img{
+	width: 100%;
+	height: 350px;
+}
+
+nav{
+	background-color: #151515;
+	text-align: center;
+	padding: 10px;
+}
+
+a{
+	font-family: Open Sans Regular, sans-serif;
+	text-decoration: none;
+}
+
+.a-menu{
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 40px;
+}
+
+.a-menu:link, .a-menu:visited{
+	color: #FFF;
+}
+
+#a-video:link, #a-video:visited{
+	color: #0040FF;
+}
+
+#a-video{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+article{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#article_index{
+	padding: 20px 40px;
+}
+
+section{
+	padding: 20px;
+	margin-bottom: 2px;
+}
+
+h1{
+	font-family: Anton-Regular, sans-serif;
+	font-size: 3rem;
+	color: #1A1818;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold; 
+}
+
+h2{
+	font: 2rem Anton-Regular, sans-serif;
+	color: black;
+}
+
+h3{
+	font: 1.8rem Anton-Regular, sans-serif;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+p{
+	font-family: Open Sans Regular, sans-serif;
+	font-size: 1.1rem;
+	color: #2B2626;
+	text-align: justify;
+	line-height: 30px;
+}
+
+.txt_preto{
+	color: #000;
+}
+
+#pag_produtos{
+	background-color: #151515;
+	margin-bottom: 0px;
+}
+
+#pag_produtos h2{
+	font: 2rem Anton-Regular, sans-serif;
+	color: #FFF;
+	font-weight: bold;
+}
+
+#pag_produtos p{
+	font-family: Open Sans Regular, sans-serif;
+	color: #FFF;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#container{
+	display: flex;
+	margin-top:0px;
+}
+
+
+#container2{
+	display: flex;
+	margin-top:0px;
+
+}
+
+.card{
+	background-color: #000;
+	margin: 10px;
+	width: 33.33%;
+	border-radius: 20px 50px;
+}
+
+.card2{
+	background-color: #000;
+	margin: 10px;
+	width: 50%;
+	border-radius: 20px 50px;
+}
+
+.card_content{
+	padding: 5px;
+}
+
+.card_content p{
+	font-family: 1rem Open Sans Regular, sans-serif;
+	color: #FFF;
+	line-height: 20px;
+	text-align: center;
+}
+
+#pag_final h2{
+	font: 2rem Anton-Regular, sans-serif;
+	color: #1A1818;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold; 
+}
+
+#video1{
+	text-align: center;
+}
+
+#video2{
+	text-align: center;
+}
+
+video{
+	width: 800px;
+}
+
+footer{
+	background-color: #151515;
+	padding: 10px;
+}
+
+footer p{
+	text-align: center;
+	color: #FFF;
+}
+
+footer a{
+	color: #FFF;
+}
+
+#link_empresa{
+	color: #FFFF00;
+}
+
+/*Página Agendamentos*/
+
+#sobre_agendamentos{
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+
+#h1_agendamentos{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#pag_techhouse{
+	background-color: #151515;
+}
+
+#pag_agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 400px;
+	margin: 0 auto;
+}
+
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #151515;
+	color: #2B2626;
+}
+
+label, fieldset, input, select, legend{
+	font: 1rem Open Sans Regular, sans-serif;
+	color: #2B2626;
+}
+
+fieldset{
+	border: 1px solid #151515;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#data-hora-tempo{
+	display: flex;
+}
+
+#botoes_form{
+	display: flex;
+}
+
+input[type="submit"]{
+	margin: 20px;
+	background-color: #2EFE2E;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	margin: 20px;
+	background-color: #FE2E2E;
+	border: 0;
+	border-radius: 5px;
+}
+
+textarea{
+	height: 80px;
+}
+
+/*Página Componentes, Hardware, Monitores, Notebooks, Desktop*/
+
+.containers_a_b{
+	float: left;
+}
+
+#container-a{
+	background-color: #151515;
+	width: 20%;
+	height: 100%;
+}
+
+#container-b{
+	background-color: #F8F6F6;
+	width: 80%;
+	height: 100%;
+	margin-left: -4px;
+}
+
+ul{
+	list-style-type: circle;
+	padding: 20px 40px
+}
+
+li{
+	font-family: Open Sans Regular, sans-serif;
+	color: #FFF;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+}
+
+.a-menu1{
+	font-size: 17px;
+}
+
+.a-menu2{
+	font-size: 17px;
+	padding-left: 20px;
+}
+
+.a-menu1:link, .a-menu1:visited{
+	color: #FFF;
+}
+
+.a-menu2:link, .a-menu2:visited{
+	color: #FFF;
+}
+
+
+#sec_produtos{
+	padding: 0px 0px;
+	margin-bottom: 0px;
+}
+
+.card_produtos{
+	background-color: #000;
+	margin: 40px;
+	width: 33.33%;
+	border-radius: 10px 10px;
+	padding: 15px;
+}
+
+#h2_produtos{
+	text-align: center;
+	color: #FFF;
+	margin-top: 20px;
+}
+
+#h2_produtos_retornar{
+	text-align: center;
+	color: #FFF;
+	margin-top: 48px;
+}
+
+#h2_limpar_filtro{
+	margin-top: 0px;
+}
+
+#h2_produtos_all{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.card_comprar{
+	background-color: #000;
+	margin-right: 100px;
+	margin-left: 100px;
+	width: 33.33%;
+	border-radius: 5px 5px;
+	padding: 5px;
+}
+
+.cards{
+	margin-bottom: 0px;
+	font-size: 17px;
+}
+
+
+.clicavel{
+	cursor: pointer;
+}
+
+.modal-carrinho-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(73, 166, 233, 0.5);
+	display: grid;
+	place-items: center;
+	transition: all 0.3s linear;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.modal-carrinho-container {
+	background: white;
+	border-radius: 5px;
+	width: 90vw;
+	/*height: 30vh;*/
+	max-width: 50%;
+	text-align: center;
+	display: grid;
+	place-items: center;
+	position: relative;
+	z-index: 101;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.664);
+}
+
+.modal-carrinho-container h3{
+	margin-top: 10px;
+	color: black;
+}
+
+/*Padrão usar hifen em classe. - classe tirada do exemplo 5-modal. Copiei o valor do transition lá do css do ex 5modal*/
+
+.botao-fechar-carrinho{ 
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	background: transparent;
+	border-color: transparent;
+	color: black;
+	cursor: pointer;	
+}
+
+.botao-carrinho {
+	position: fixed;;
+	width:60px;
+	height:60px;
+	top:5px;
+	right:30px;
+	background-color: #DF013A;	
+	border-radius:50px;	
+	box-shadow: 2px 2px 3px #999;
+	margin-top:22px;	
+	text-align: center;
+	/*Ícone do carrinho*/
+	font-size: 25px;
+	color: black;
+}
+
+.botao-carrinho i {
+	margin-top: 18px;    
+}
+
+#qtdItensCarrinho {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: -4px;
+}
